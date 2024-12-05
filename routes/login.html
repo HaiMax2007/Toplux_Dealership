@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toplux | Login</title>
+  </head>
+  <body class="login">
+    <form class="login-form" action="home.html" method="post">
+      <h1>login</h1>
+      <div class="login-input">
+        <div class="input-group">
+          <label for="email">email</label>
+          <input type="email" name="email" id="email" required>
+        </div>
+        <div class="input-group">
+          <div class="password-forgot">
+            <label for="password">password</label>
+            <a href="#">forgot password?</a>
+          </div>
+          <div class="password-input">
+            <input type="password" name="password" id="password" required>
+            <button id="eye" type="button">
+              <img src="/eye.png" alt="Eye">
+            </button>
+            <button id="hidden" type="button">
+              <img src="/hidden.png" alt="Hidden">
+            </button>
+          </div>
+        </div>
+      </div>
+      <button class="login-btn" type="submit" name="submit">sign in</button>
+      <p class="login-acc">Don't have an account? <a href="register.html">Sign Up</a></p>
+    </form>
+    <script type="module" src="/src/main.js"></script>
+    <script type="module" src="/src/login.js"></script>
+  </body>
+</html>
